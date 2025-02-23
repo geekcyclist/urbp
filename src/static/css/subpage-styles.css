@@ -1,0 +1,87 @@
+/* Styles specific to pages linked from index.html */
+
+.page-header {
+    background-color: #f9f9f9;
+    padding: 80px 20px 40px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.subpage-section {
+    background-color: white;
+    padding: 60px 20px;
+}
+
+.subpage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.subpage-category {
+    background: white;
+    padding: 20px;
+}
+
+.subpage-category h2 {
+    color: #e74c3c;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.subpage-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.subpage-item:last-child {
+    border-bottom: none;
+}
+
+.subpage-item h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.subpage-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 60px 20px 30px;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .subpage-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .subpage-category {
+        padding: 15px;
+    }
+}
