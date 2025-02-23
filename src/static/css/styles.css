@@ -196,8 +196,6 @@ h2 {
     text-align: center;
 }
 
-/* [Previous CSS remains the same until get-involved section] */
-
 /* Donation section */
 .donate {
     background-color: #f9f9f9;
@@ -301,12 +299,47 @@ h2 {
     resize: vertical;
 }
 
-/* Update existing cta-button styles for form submission */
 .contact-form .cta-button {
     width: 100%;
     border: none;
     cursor: pointer;
     font-size: 16px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top: 1px solid #eee;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer-section h3 {
+    color: #e74c3c;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-section.nonprofit-status {
+    font-weight: 500;
 }
 
 /* Media queries */
