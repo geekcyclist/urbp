@@ -1,0 +1,278 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.photo-credit {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.photo-credit a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/luis-perez-hero-1200-600.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Call to action button */
+.cta-button {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+/* Section styles */
+.section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Impact numbers */
+.impact-numbers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.impact-item {
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.impact-item h3 {
+    font-size: 2.5rem;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+/* How it works section */
+.how-it-works {
+    background-color: #f9f9f9;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.step {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+    text-align: center;
+}
+
+.step-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+/* Get involved section */
+.get-involved {
+    text-align: center;
+}
+
+/* [Previous CSS remains the same until get-involved section] */
+
+/* Donation section */
+.donate {
+    background-color: #f9f9f9;
+}
+
+.donation-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.donation-method {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+}
+
+.payment-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.donation-method h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.donation-method p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.payment-button {
+    margin-top: 20px;
+}
+
+.paypal-button .cta-button {
+    background-color: #0070ba;
+}
+
+.paypal-button .cta-button:hover {
+    background-color: #005ea6;
+}
+
+.venmo-button .cta-button {
+    background-color: #3396cd;
+}
+
+.venmo-button .cta-button:hover {
+    background-color: #2779a5;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #e74c3c;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Update existing cta-button styles for form submission */
+.contact-form .cta-button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .impact-item {
+        min-width: 150px;
+    }
+
+    .step {
+        min-width: 100%;
+    }
+
+    .contact-form {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .donation-method {
+        min-width: 100%;
+        margin: 10px 0;
+    }
+}
