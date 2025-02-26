@@ -21,6 +21,7 @@
 }
 
 .subpage-section {
+    max-width: 1200px;
     background-color: white;
     padding: 60px 20px;
 }
@@ -69,7 +70,6 @@
 
 /* Additional styles specific to About page */
 .subpage-section {
-    max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
 }
