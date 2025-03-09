@@ -109,6 +109,15 @@
     margin-bottom: 15px;
 }
 
+/* Additional styles specific to Sponsor page */
+.sponsor {
+    text-align: center;
+}
+
+.sponsor h2 {
+    text-align: center;
+}
+
 
 @media (max-width: 768px) {
     .page-header {
